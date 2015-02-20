@@ -1,0 +1,32 @@
+{% extends 'template.html' %}
+
+{% block header %}
+	<div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="add_artist">Artists<span class="logo_colour">Bay</span></a></h1>
+          <h2>Your Music Artists. Your Way.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+			{% block menu %}
+			{% endblock %}
+        </ul>
+      </div>
+    </div>
+{% endblock %}
+
+<div id="content_header"></div>
+
+{% block content %}
+{% endblock %}
+
+<div id="content_footer"></div>
+
+{% block footer %}
+	<div id="footer">
+      <p><a href="add_artist">Add Artists</a> | <a href="browse_artists">Browse Artists</a></p>
+      <p>Copyright &copy; ArtistsBay 2015</p>
+    </div>
+{% endblock %}

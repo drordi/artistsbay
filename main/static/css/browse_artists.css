@@ -1,0 +1,18 @@
+#browse_artists_area {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+	overflow: hidden;
+	background: #E6EDF2;
+}
+
+#browse_artists_pane {
+    width: 15%;
+    background: #00C6F0l;
+    float: left;
+}
+
+#albums_list_pane {
+    margin-left: 15%;
+    background: #E1E3E3;
+}

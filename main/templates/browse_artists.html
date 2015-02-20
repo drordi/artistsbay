@@ -1,0 +1,31 @@
+{% extends 'main_template.html' %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/browse_artists.css" />
+{% endblock %}
+
+{% block js %}
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="{{STATIC_URL}}js/browse.js"></script>
+{% endblock %}
+
+{% block menu %}
+	<li><a href="add_artist">Add Artist</a></li>
+    <li class="selected"><a href="browse_artists">Browse Artists</a></li>
+{% endblock %}
+
+{% block content %}
+	<div id="browse_artists_area">
+		<div id="browse_artists_pane">
+			<ul id="artists_list">
+				{% for artist in artists %}
+				<li><a href="#" class="artist_name" id="{{artist.artistName}}">{{artist.artistName}}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div id="albums_list_pane">
+			<ul id="albums_list">
+			</ul>
+		</div>
+	</div>
+{% endblock %}

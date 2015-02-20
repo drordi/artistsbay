@@ -1,0 +1,29 @@
+{% extends 'main_template.html' %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/add_artist.css" />
+{% endblock %}
+
+{% block js %}
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="{{STATIC_URL}}js/main.js"></script>
+{% endblock %}
+
+{% block menu %}
+	<li class="selected"><a href="add_artist">Add Artist</a></li>
+    <li><a href="browse_artists">Browse Artists</a></li>
+{% endblock %}
+
+{% block content %}
+	<div id="site_content">
+	<form action="#" method="post">
+	  <div class="form_settings">
+		Enter Artist Name:&nbsp;<input id="query" type="text" name="name" value="" />
+		<input id="artist_search" class="submit" type="submit" name="name" value="Add" /></p>
+	  </div>
+    </form>
+	<p>
+	<p style="padding-top: 5px"><span>&nbsp;</span>
+	<span id="query_result"></span>
+	</div>
+{% endblock %}
