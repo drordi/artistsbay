@@ -25,7 +25,6 @@ def update_albums(artist_name):
     if ret_json['resultCount'] and ret_json['resultCount']>0:
         upper_artist_name = artist_name.upper()
         for result in ret_json["results"]:
-            print >>sys.stderr, result["artistName"].upper(), upper_artist_name#TODO
             if result["artistName"].upper() == upper_artist_name:
                 entry = Album(artistId=result["artistId"],\
                 albumId=result["collectionId"],\

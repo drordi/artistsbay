@@ -33,7 +33,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'f5zsh5wb-la4h)5cp96^rk5*x@qiy(mgf5#4)_%4h(chc++ng2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
 
 TEMPLATE_DEBUG = True
 
